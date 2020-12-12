@@ -2,7 +2,7 @@ import React from 'react'
 import Container from './container'
 import Hero from './hero'
 import Footer from './footer'
-import GlobalStyle from './GlobalStyle'
+import GlobalStyle from './globalStyle'
 
 class Template extends React.Component {
   render() {
