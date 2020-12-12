@@ -1,17 +1,22 @@
 import React from 'react'
-import './base.css'
 import Container from './container'
-import Navigation from './navigation'
+import Hero from './hero'
+import Footer from './footer'
+import GlobalStyle from './GlobalStyle'
 
 class Template extends React.Component {
   render() {
-    const { children } = this.props
+    const { children, noBottomBar} = this.props
 
     return (
-      <Container>
-        <Navigation />
-        {children}
-      </Container>
+      <>
+        <GlobalStyle noBottomBar={noBottomBar} />
+        <Container>
+          <Hero />
+          {children}
+        </Container>
+        <Footer />
+      </>
     )
   }
 }
